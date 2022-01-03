@@ -187,6 +187,13 @@ if(WITH_IMAGE_WEBP)
   add_definitions(-DWITH_WEBP)
 endif()
 
+if(WITH_IMAGE_KRA)
+  list(APPEND LIB
+    bf_imbuf_kra
+  )
+  add_definitions(-DWITH_KRA)
+endif()
+
 list(APPEND INC
   ../../../intern/opencolorio
 )

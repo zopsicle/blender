@@ -175,6 +175,10 @@ if(WITH_IMAGE_CINEON)
   add_subdirectory(imbuf/intern/cineon)
 endif()
 
+if(WITH_IMAGE_KRA)
+  add_subdirectory(imbuf/intern/kra)
+endif()
+
 if(WITH_PYTHON)
   add_subdirectory(python)
 endif()

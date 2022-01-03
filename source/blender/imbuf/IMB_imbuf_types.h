@@ -82,6 +82,9 @@ enum eImbFileType {
 #ifdef WITH_WEBP
   IMB_FTYPE_WEBP = 14,
 #endif
+#ifdef WITH_KRA
+  IMB_FTYPE_KRA = 15,
+#endif
 };
 
 /* Only for readability. */

@@ -309,6 +309,7 @@ option(WITH_IMAGE_DDS           "Enable DDS Image Support" ON)
 option(WITH_IMAGE_CINEON        "Enable CINEON and DPX Image Support" ON)
 option(WITH_IMAGE_HDR           "Enable HDR Image Support" ON)
 option(WITH_IMAGE_WEBP          "Enable WebP Image Support" ON)
+option(WITH_IMAGE_KRA           "Enable Krita Image Support" ON)
 
 # Audio/Video format support
 option(WITH_CODEC_AVI           "Enable Blenders own AVI file support (raw/jpeg)" ON)
@@ -1941,6 +1942,7 @@ if(FIRST_RUN)
   info_cfg_option(WITH_IMAGE_OPENJPEG)
   info_cfg_option(WITH_IMAGE_TIFF)
   info_cfg_option(WITH_OPENIMAGEIO)
+  info_cfg_option(WITH_IMAGE_KRA)
 
   info_cfg_text("Audio:")
   info_cfg_option(WITH_CODEC_AVI)

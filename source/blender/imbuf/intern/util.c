@@ -66,6 +66,9 @@ const char *imb_ext_image[] = {
 #ifdef WITH_WEBP
     ".webp",
 #endif
+#ifdef WITH_KRA
+    ".kra",
+#endif
     NULL,
 };
 
