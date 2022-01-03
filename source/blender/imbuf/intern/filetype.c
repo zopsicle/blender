@@ -40,6 +40,10 @@
 #  include "dds/dds_api.h"
 #endif
 
+#ifdef WITH_KRA
+#  include "kra/kra_api.h"
+#endif
+
 const ImFileType IMB_FILE_TYPES[] = {
     {
         .init = NULL,
@@ -209,6 +213,20 @@ const ImFileType IMB_FILE_TYPES[] = {
         .flag = IM_FTYPE_FLOAT,
         .filetype = IMB_FTYPE_PSD,
         .default_save_role = COLOR_ROLE_DEFAULT_FLOAT,
+    },
+#endif
+#ifdef WITH_KRA
+    {
+        .init = NULL,
+        .exit = NULL,
+        .is_a = imb_is_a_krita,
+        .load = imb_load_krita,
+        .load_filepath = NULL,
+        .save = NULL,
+        .load_tile = NULL,
+        .flag = 0,
+        .filetype = IMB_FTYPE_KRA,
+        .default_save_role = COLOR_ROLE_DEFAULT_BYTE,
     },
 #endif
     {NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0},

@@ -96,6 +96,9 @@ enum eImbFileType {
 #ifdef WITH_DDS
   IMB_FTYPE_DDS = 13,
 #endif
+#ifdef WITH_KRA
+  IMB_FTYPE_KRA = 14,
+#endif
 };
 
 /* Only for readability. */

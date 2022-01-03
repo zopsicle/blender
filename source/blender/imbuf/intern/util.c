@@ -80,6 +80,9 @@ const char *imb_ext_image[] = {
 #ifdef WITH_OPENIMAGEIO
     ".psd", ".pdd",  ".psb",
 #endif
+#ifdef WITH_KRA
+    ".kra",
+#endif
     NULL,
 };
 
